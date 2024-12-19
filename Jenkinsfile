@@ -2,10 +2,10 @@ pipeline {
     agent any  
 
     environment {
-        DOCKER_IMAGE = "my-node-app"
+        DOCKER_IMAGE = "app.js"
         REGISTRY = "docker.io"
-        K8S_CLUSTER = "your-k8s-cluster"
-        DEPLOYMENT_NAME = "my-node-app-deployment"
+        K8S_CLUSTER = "my-k8s-cluster"
+        DEPLOYMENT_NAME = "my-node-app"
     }
 
     stages {
